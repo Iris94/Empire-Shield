@@ -1,0 +1,18 @@
+---
+const {
+    width,
+    whereToFromMenu,
+    opacity,
+    jumpToAnotherPageFromMenu,
+
+} = Astro.props
+---
+
+<li class=`parchment-paper-css h-14 
+flex items-center justify-center font-semibold
+hover:cursor-pointer ${width} ${opacity}`
+> 
+<a href={jumpToAnotherPageFromMenu}>
+    {whereToFromMenu}
+</a>
+</li> 

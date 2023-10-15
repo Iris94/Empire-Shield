@@ -1,0 +1,52 @@
+---
+import PlayerCard from "./PlayerCard.astro";
+import Knight from "../../../assets/knight.png"
+import Mage from "../../../assets/mage.png"
+import Assassin from "../../../assets/assassin.png"
+---
+
+<section 
+class="w-2/3 h-4/6 z-10 flex justify-center items-center flex-col
+parchment-paper-css">
+
+    <div class="lg:w-1/2 w-5/6 h-1/6 flex
+    justify-center items-center">
+        <h3 class="parchment-text lg:text-2xl text-xl text-center">
+            Pick a character
+        </h3> 
+    </div>
+
+    <div class="w-full h-full flex flex-col lg:flex-row justify-evenly items-center gap-3 p-3">
+        <PlayerCard 
+            playerClass="Knight";
+            playerImage={Knight}
+            playerHP="120";
+            playerMana="75";
+            playerAttack="100";
+            playerPoints="5";
+        />
+
+        <PlayerCard 
+            playerClass="Mage";
+            playerImage={Mage}
+            playerHP="70";
+            playerMana="150";
+            playerAttack="100";
+            playerPoints="6";
+        />
+
+        <PlayerCard 
+            playerClass="Assassin";
+            playerImage={Assassin}
+            playerHP="95";
+            playerMana="110";
+            playerAttack="100";
+            playerPoints="7";
+        />
+
+    </div>
+    
+</section>
+
+
+
